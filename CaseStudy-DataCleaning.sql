@@ -79,12 +79,14 @@ SELECT *
 FROM dbo.ER_Wait_Times
 WHERE Patient_Satisfaction is NULL;
 
--- Removes Duplicates
-SELECT DISTINCT *
-FROM dbo.ER_Wait_Times;
+-- Check for Duplicates
+SELECT Visit_ID, COUNT(Visit_ID) AS occurence_count
+FROM dbo.ER_Wait_Times
+GROUP BY Visit_ID
+HAVING COUNT(Visit_ID) > 1;
 
 -- Check for outliers
-SELECT Hospital_Name, Total_Wait_Time_min
+SELECT Total_Wait_Time_min
 FROM dbo.ER_Wait_Times
-ORDER BY Total_Wait_Time_min;
+ORDER BY Total_Wait_Time_min DESC;
 
