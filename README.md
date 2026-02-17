@@ -37,7 +37,7 @@ Hospital administrators, ER department heads, shift managers
 | Facility Size (Beds)| int | Number of beds available during visits |
 | Time to Registration (min) | int | Check in time |
 | Time to Triage (min) | int | Time taken to compelete triage assessment |
-| Time to Medical Professional (min) | tinyint | Patient to Doc time |
+| Time to Medical Professional (min) | int | Patient to Doc time |
 |  Total Wait Time (min) | int | lenth of stay |
 |  Patient Outcome | nvarchar(50) | Outcome of visit (Discharged, Admitted, Left Without being seen)|
 |  Patient Satisfaction | int | Satifaction score (1 to 5, 5 being the highest) |
@@ -51,7 +51,7 @@ Hospital administrators, ER department heads, shift managers
 ## Data Analysis
 - Average wait TIme: 81 minutes
 - Median wait time: 60 minutes
-
+Note: This finding shows that the data has a right-skewed distribution. A few patients are waiting for a very long time, which is pulling up the total average wait time. 
 
 
 
