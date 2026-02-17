@@ -16,7 +16,7 @@ Hospital administrators, ER department heads, shift managers
 
 ##### Source: 
 - River, 2025. Er Wait Time. (Version 2) [Data Set].Kaggle.(https://www.kaggle.com/datasets/rivalytics/er-wait-time/data?select=ER+Wait+Time+Dataset.csv)
-- Note: This is sunthetic/historical data intended for porffolio use and does not contain any Protected Health Information. 
+- Note: This is sunthetic/historical data intended for porfolio use and does not contain any Protected Health Information. 
   
 ##### Data Structure:
 
@@ -42,8 +42,10 @@ Hospital administrators, ER department heads, shift managers
 |  Patient Outcome | nvarchar(50) | Outcome of visit (Discharged, Admitted, Left Without being seen)|
 |  Patient Satisfaction | tinyint | Satifaction score (1 to 5, 5 being the highest) |
 
-
-
+## Data Cleaning
+- Confirmed there are no missing values
+- Removed Duplicates
+- Checked for outliers
 
 
 
