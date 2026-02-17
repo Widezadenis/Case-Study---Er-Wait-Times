@@ -28,26 +28,22 @@ Hospital administrators, ER department heads, shift managers
 | Hospital Name | nvarchar(50) | Name of Hospital |
 | Region | nvarchar(50) | Classification as Urban or Rural |
 | Visit Date | datetime2(7) | Time and date of visit |
+| Day of Week | nvarchar(50) | Day of Week (Monday, Tuesday) |
+| Season | nvarchar(50) | Time of year (Winter, Spring, Summer, Fall) |
+| Time of Day | nvarchar(50) | Time visited (Early morning, Afternoon) |
+| Urgency Level | nvarchar(50) | (Urgency Classification (Critical, High, Medium, Low.) |
+| Nurse-to-Patient Ratio | tinyint | Nurse to patient ratio during visits |
+| Specialist Availability| tinyint | Number of specialist available during visits |
+| Facility Size (Beds)| tinyint | Number of beds available during visits |
+| Time to Registration (min) | tinyint | Check in time |
+| Time to Triage (min) | tinyint | Time taken to compelete triage assessment |
+| Time to Medical Professional (min) | tinyint | Patient to Doc time |
+|  Total Wait Time (min) | smallint | lenth of stay |
+|  Patient Outcome | nvarchar(50) | Outcome of visit (Discharged, Admitted, Left Without being seen)|
+|  Patient Satisfaction | tinyint | Satifaction score (1 to 5, 5 being the highest) |
 
-- Visit ID
-- Patient ID
-- Hospital ID
-- Hospital Name
-- Region
-- Visit Date
-- Day of Week
-- Season
-- Time of Day
-- Urgency Level
-- Nurse-to-Patient Ratio
-- Specialist Availability
-- Facility Size (Beds)
-- Time to Registration (min)
-- Time to Triage (min)
-- Time to Medical Professional (min)
-- Total Wait Time (min)
-- Patient Outcome
-- Patient Satisfaction`
+
+
 
 
 
