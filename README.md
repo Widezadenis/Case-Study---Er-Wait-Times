@@ -21,8 +21,13 @@ Hospital administrators, ER department heads, shift managers
 ##### Data Structure:
 
 | Column Name | Type | Description |
-| :--- | :---: | ---: |
-| Visit ID | nvarchar(50) | Unique identifier |
+| ---  | --- | --- |
+| Visit ID | nvarchar(50) | Unique Identifier |
+| Patient ID | nvarchar(50) | Unique Identifier |
+| Hospital ID | nvarchar(50) | Unique Identifier |
+| Hospital Name | nvarchar(50) | Name of Hospital |
+| Region | nvarchar(50) | Classification as Urban or Rural |
+| Visit Date | datetime2(7) | Time and date of visit |
 
 - Visit ID
 - Patient ID
