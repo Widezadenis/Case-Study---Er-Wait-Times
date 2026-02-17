@@ -46,7 +46,7 @@ Hospital administrators, ER department heads, shift managers
 - Missing Values: Confirmed the dateset contains 0 null values accross all 19 columns
 - Duplicates: Checked for duplicate Visits IDs. None were found.
 - Outliers: Reviewed the Total Wait Time column for any extreme values.
-  * Findings: The maximum wait time was 442 minutes. These extreme values were   retained for now, as they may represent critical systemic failures, but they will be noted during visualization to avoid skewed scales.
+  * Findings: The maximum wait time was 442 minutes. These values were retained for now, as they may represent systemic failures, but they will be noted during visualization to avoid skewed scales.
 
 ## Data Analysis
 - Average wait TIme: 81 minutes
