@@ -12,5 +12,27 @@ Hospital administrators, ER department heads, shift managers
 -   What factors affect wait times?
 
 ## Data Collection & Description
-###### Source: River, 2025. Er Wait Time. (Version 2) [Data Set].Kaggle.https://www.kaggle.com/datasets/rivalytics/er-wait-time/data?select=ER+Wait+Time+Data+Overview.txt 
+##### Source: 
+- River, 2025. Er Wait Time. (Version 2) [Data Set].Kaggle.https://www.kaggle.com/datasets/rivalytics/er-wait-time/data?select=ER+Wait+Time+Data+Overview.txt 
+##### Data Structure: 
+- Visit ID
+- Patient ID
+- Hospital ID
+- Hospital Name
+- Region
+- Visit Date
+- Day of Week
+- Season
+- Time of Day
+- Urgency Level
+- Nurse-to-Patient Ratio
+- Specialist Availability
+- Facility Size (Beds)
+- Time to Registration (min)
+- Time to Triage (min)
+- Time to Medical Professional (min)
+- Total Wait Time (min)
+- Patient Outcome
+- Patient Satisfaction`
+
 
