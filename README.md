@@ -10,3 +10,6 @@ Hospital administrators, ER department heads, shift managers
 -   What is the current average wait time?
 -   What times of the day/week are waiting times the longest?
 -   What factors affect wait times?
+
+## Data Collection & Description
+Source: River, 2025. Er Wait Time. (Version 2) [Data Set].Kaggle.https://www.kaggle.com/datasets/rivalytics/er-wait-time/data?select=ER+Wait+Time+Data+Overview.txt 
