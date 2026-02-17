@@ -9,14 +9,21 @@ Hospital administrators, ER department heads, shift managers
 ##### Key Questions:
 -   What is the current average wait time?
 -   What times of the day/week are waiting times the longest?
--   What factors affect wait times?
+-   Is there a correlation between 'Nurse-to-Patient-Ratio' and 'Total Wait Time' during peak hours?
+-   Does the availability of a speciacilst reduce overall wait time or does it shift wait times? 
 
-## Data Collection & Description
+## Data Overview
 
 ##### Source: 
 - River, 2025. Er Wait Time. (Version 2) [Data Set].Kaggle.(https://www.kaggle.com/datasets/rivalytics/er-wait-time/data?select=ER+Wait+Time+Dataset.csv)
+- Note: This is sunthetic/historical data intended for porffolio use and does not contain any Protected Health Information. 
   
-##### Data Structure: 
+##### Data Structure:
+
+| Column Name | Type | Description |
+| :--- | :---: | ---: |
+| Visit ID | nvarchar(50) | Unique identifier |
+
 - Visit ID
 - Patient ID
 - Hospital ID
@@ -37,6 +44,8 @@ Hospital administrators, ER department heads, shift managers
 - Patient Outcome
 - Patient Satisfaction`
 
-## Data Cleaning & Preparation 
+
+
+
 
 
