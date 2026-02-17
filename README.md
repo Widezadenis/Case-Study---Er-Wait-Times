@@ -6,7 +6,7 @@ This case study analyzes Emergency Room operational data to identify the root ca
 ##### Stakeholders:
 Hospital administrators, ER department heads, shift managers
 
-###### Key Questions:
+##### Key Questions:
 -   What is the current average wait time?
 -   What times of the day/week are waiting times the longest?
 -   What factors affect wait times?
