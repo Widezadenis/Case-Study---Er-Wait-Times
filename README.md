@@ -1,7 +1,7 @@
 # Case-Study---Er-Wait-Times
 
 # Introduction: 
-This case study analyzes Emergency Room operational data to identify the root causes of longer wait times. By quantifying bottlenecks in patient flow, this analysis aims to provide data-driven recommendations to reduce the 'Door-to-Doc' time, ultimately improving both patient throughput and satisfaction scores.
+This case study analyzes Emergency Room operational data to identify the root cause of longer wait times. By quantifying bottlenecks in patient flow, this analysis aims to provide data-driven recommendations to reduce the 'Door-to-Doc' time, ultimately improving both patient throughput and satisfaction scores.
 
 ##### Stakeholders:
 Hospital administrators, ER department heads, shift managers
@@ -53,11 +53,6 @@ Hospital administrators, ER department heads, shift managers
 - Median wait time: 60 minutes
 Note: This finding shows that the data has a right-skewed distribution. A few patients are waiting for a very long time, which is pulling up the total average wait time. 
 
-#### Visualizations
-- Bar Chart: Average wait time by time of day - Reveals that there's an increase in patient visits in the evening.
-- Bar Chart: Average wait time by day of the week - Reveals that Mondays are the busiest and Sundays are the slowest. 
-- Box Plot: Wait time by urgency levels - Reveals that patients who have critical needs are seen faster than non critical patients.
-
 ####  Root Cause Analysis
 -  Wait times are the longest during the evening and afternoons shifts and Mondays.
 -  Wait times are longer during the winter season
@@ -79,4 +74,10 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 | 9 | 78 | 11 | 23 | 44 |
 | 10 | 84 | 11 | 25 | 47|
 
-* Findings: Increasing specialists provides minimal redunction in total wait times.  Interestingly wait, registration, triage, and doc times increase by a small amount when the number of specialist increase. 
+* Findings: Increasing specialists provides minimal redunction in total wait times.  Interestingly, wait, registration, triage, and doc times increase by a small amount when the number of specialist increase.
+
+#### Visualizations
+- Bar Chart: Average wait time by time of day - Reveals that there's an increase in patient visits in the evening.
+- Bar Chart: Average wait time by day of the week - Reveals that Mondays are the busiest and Sundays are the slowest. 
+- Box Plot: Wait time by urgency levels - Reveals that patients who have critical needs are seen faster than non critical patients.
+- Scatter Plot: Nurse-to-Patient-Ratio and total wait time correlation - Reveals ratio of 2:1 during evening hours keeps wait times under 30 minutes.
