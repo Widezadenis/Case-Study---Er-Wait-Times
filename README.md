@@ -10,7 +10,7 @@ Hospital administrators, ER department heads, shift managers
 -   What is the current average wait time?
 -   What times of the day/week are waiting times the longest?
 -   Is there a correlation between 'Nurse-to-Patient-Ratio' and 'Total Wait Time' during peak hours?
--   Does the availability of a specialist reduce overall wait time or does it shift the bottlenexk to another stage of the process (registration or triage)? 
+-   Does the availability of a specialist reduce overall wait time or does it shift the bottleneck to another stage of the process (registration or triage)? 
 
 ## Data Overview
 
