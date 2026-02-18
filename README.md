@@ -53,5 +53,8 @@ Hospital administrators, ER department heads, shift managers
 - Median wait time: 60 minutes
 Note: This finding shows that the data has a right-skewed distribution. A few patients are waiting for a very long time, which is pulling up the total average wait time. 
 
+#### Visualizations
+Bar Chart: Average wait time by time of day - Reveals that there's an increase in patient visits in the evening. 
+
 
 
