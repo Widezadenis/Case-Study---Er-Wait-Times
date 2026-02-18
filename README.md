@@ -61,3 +61,5 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 ####  Root Cause Analysis
 -  Wait times are the longest during the evening shift and Mondays.
 -  Wait times are longer during the winter season
+-  When the nurse to patient ratio is high during peak hours (evening) the wait time is longer
+-  The availability of sPecialist keeps wait times about the same and doea not shift bottleneck to registration, time to doctor, or triage. 
