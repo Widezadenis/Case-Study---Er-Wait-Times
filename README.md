@@ -43,7 +43,7 @@ Hospital administrators, ER department heads, shift managers
 |  Patient Satisfaction | int | Satisfaction score (1 to 5, 5 being the highest) |
 
 ## Data Cleaning
-- Missing Values: Confirmed the dateset contains 0 null values across all 19 columns
+- Missing Values: Confirmed the dataset contains 0 null values across all 19 columns
 - Duplicates: Checked for duplicate Visits IDs. None were found.
 - Outliers: Reviewed the Total Wait Time column for any extreme values.
   * Findings: The maximum wait time was 442 minutes. These values were retained for now, as they may represent systemic failures, but they will be noted during visualization to avoid skewed scales.
@@ -59,10 +59,11 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 - Box Plot: Wait time by urgency levels - Reveals that patients who have critical needs are seen faster than non critical patients.
 
 ####  Root Cause Analysis
--  Wait times are the longest during the evening shift and Mondays.
+-  Wait times are the longest during the evening and afternoons shifts and Mondays.
 -  Wait times are longer during the winter season
--  When the nurse to patient ratio is high during peak hours (evening) the wait time is longer
--  The availability of specialist keeps wait times about the same and doea not shift bottleneck to registration, time to doctor, or triage.
+-  During peak hours, there is a positive correlation between nurse to patient ratio and total wait times. For every increase in the ratio wait times increase.
+  * Findings: Keeping nurse to patient ratio of 2:1 or better during peak hours can keep wait times under 30 minutes. Ratios of 3:1 or more increases wait times, 4:1 causes major delays.
+-  The availability of specialist does not reduce wait times.
   
 | Specialist | Avg Wait | Avg Registration | Avg Triage | Avg Doc Time |
 | ---  | --- | --- | --- | --- |
@@ -77,3 +78,5 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 | 8 | 78 | 11 | 23 | 43 |
 | 9 | 78 | 11 | 23 | 44 |
 | 10 | 84 | 11 | 25 | 47|
+
+* Findings: Increasing specialists provides minimal redunction in total wait times.  Interestingly wait, registration, triage, and doc times increase by a small amount when the number of specialist increase. 
