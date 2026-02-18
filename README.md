@@ -46,7 +46,7 @@ Hospital administrators, ER department heads, shift managers
 - Missing Values: Confirmed the dataset contains 0 null values across all 19 columns
 - Duplicates: Checked for duplicate Visits IDs. None were found.
 - Outliers: Reviewed the Total Wait Time column for any extreme values.
-  * Findings: The maximum wait time was 442 minutes. These values were retained for now, as they may represent systemic failures, but they will be noted during visualization to avoid skewed scales.
+    * Findings: The maximum wait time was 442 minutes. These values were retained for now, as they may represent systemic failures, but they will be noted during visualization to avoid skewed scales.
 
 ## Data Analysis
 - Average wait Time: 81 minutes
@@ -57,9 +57,9 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 -  Wait times are the longest during the evening and afternoons shifts and Mondays.
 -  Wait times are longer during the winter season
 -  During peak hours, there is a positive correlation between nurse to patient ratio and total wait times. For every increase in the ratio wait times increase.
-  * Findings:  Keeping nurse to patient ratio of 2:1 or better during peak hours can keep wait times under 30 minutes. Ratios of 3:1 or more increases wait times, 4:1 causes major delays.
+    * Findings:  Keeping nurse to patient ratio of 2:1 or better during peak hours can keep wait times under 30 minutes. Ratios of 3:1 or more increases wait times, 4:1 causes major delays.
 -  The availability of specialist does not reduce wait times.
-    * Findings: Increasing specialists provides minimal redunction in total wait times.  Interestingly, wait, registration, triage, and doc times increase by a small amount when the number of specialist increase.
+    * Findings: Increasing specialists provides minimal reduction in total wait times.  Interestingly, wait, registration, triage, and doc times increase by a small amount when the number of specialist increase.
       
 | Specialist | Avg Wait | Avg Registration | Avg Triage | Avg Doc Time |
 | ---  | --- | --- | --- | --- |
@@ -80,3 +80,17 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 - Bar Chart: Average wait time by day of the week - Reveals that Mondays are the busiest and Sundays are the slowest. 
 - Box Plot: Wait time by urgency levels - Reveals that patients who have critical needs are seen faster than non critical patients.
 - Scatter Plot: Nurse-to-Patient-Ratio and total wait time correlation - Reveals ratio of 2:1 during evening hours keeps wait times under 30 minutes.
+- Stacked Bar Chart: Composition of wait times - Shows how the number of specialist affect wait times.
+
+#### Limitations
+- The analysis does not account for external factors (flu season, local events)
+- "Peak hours" were defined based on volume, not clinical urgency
+
+#### Recommendations
+- Resource Allocation:
+  *  Increase nurse coverage during the evening and on Mondays to improve nurse to patient ratios
+  *  Current specialist levels does not have an impact on wait times, resources need to be allocated to nursing staff. 
+- Winter Season Planning:
+  * Increase nurse to patient ratio
+  * Restructure registration process to accomate patient volume. 
+  
