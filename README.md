@@ -62,7 +62,7 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 -  Wait times are the longest during the evening and afternoons shifts and Mondays.
 -  Wait times are longer during the winter season
 -  During peak hours, there is a positive correlation between nurse to patient ratio and total wait times. For every increase in the ratio wait times increase.
-  * Findings: Keeping nurse to patient ratio of 2:1 or better during peak hours can keep wait times under 30 minutes. Ratios of 3:1 or more increases wait times, 4:1 causes major delays.
+  * Findings:  Keeping nurse to patient ratio of 2:1 or better during peak hours can keep wait times under 30 minutes. Ratios of 3:1 or more increases wait times, 4:1 causes major delays.
 -  The availability of specialist does not reduce wait times.
   
 | Specialist | Avg Wait | Avg Registration | Avg Triage | Avg Doc Time |
