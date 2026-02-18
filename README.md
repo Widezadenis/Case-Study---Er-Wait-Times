@@ -66,3 +66,14 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
   
 | Specialist | Avg Wait | Avg Registration | Avg Triage | Avg Doc Time |
 | ---  | --- | --- | --- | --- |
+| 0 | 77 | 11 | 23 | 42 |
+| 1 | 79 | 11 | 23 | 43 |
+| 2 | 83 | 11 | 25 | 45 |
+| 3 | 88 | 12 | 27 | 49 |
+| 4 | 80 | 11 | 24 | 44 |
+| 5 | 76 | 11 | 23 | 42 |
+| 6 | 80 | 11 | 24 | 44 |
+| 7 | 86 | 12 | 25 | 48 |
+| 8 | 78 | 11 | 23 | 43 |
+| 9 | 78 | 11 | 23 | 44 |
+| 10 | 84 | 11 | 25 | 47|
