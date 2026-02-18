@@ -54,7 +54,7 @@ Hospital administrators, ER department heads, shift managers
 Note: This finding shows that the data has a right-skewed distribution. A few patients are waiting for a very long time, which is pulling up the total average wait time. 
 
 #### Visualizations
-Bar Chart: Average wait time by time of day - Reveals that there's an increase in patient visits in the evening. 
-
+- Bar Chart: Average wait time by time of day - Reveals that there's an increase in patient visits in the evening.
+- Bar Chart: Average wait time by day of the week - Reveals that Mondays are the busiest and Sundays are the slowest. 
 
 
