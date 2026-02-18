@@ -59,7 +59,8 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 -  During peak hours, there is a positive correlation between nurse to patient ratio and total wait times. For every increase in the ratio wait times increase.
   * Findings:  Keeping nurse to patient ratio of 2:1 or better during peak hours can keep wait times under 30 minutes. Ratios of 3:1 or more increases wait times, 4:1 causes major delays.
 -  The availability of specialist does not reduce wait times.
-  
+    * Findings: Increasing specialists provides minimal redunction in total wait times.  Interestingly, wait, registration, triage, and doc times increase by a small amount when the number of specialist increase.
+      
 | Specialist | Avg Wait | Avg Registration | Avg Triage | Avg Doc Time |
 | ---  | --- | --- | --- | --- |
 | 0 | 77 | 11 | 23 | 42 |
@@ -73,8 +74,6 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 | 8 | 78 | 11 | 23 | 43 |
 | 9 | 78 | 11 | 23 | 44 |
 | 10 | 84 | 11 | 25 | 47|
-
-* Findings: Increasing specialists provides minimal redunction in total wait times.  Interestingly, wait, registration, triage, and doc times increase by a small amount when the number of specialist increase.
 
 #### Visualizations
 - Bar Chart: Average wait time by time of day - Reveals that there's an increase in patient visits in the evening.
