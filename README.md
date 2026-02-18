@@ -18,7 +18,7 @@ Hospital administrators, ER department heads, shift managers
 - River, 2025. Er Wait Time. (Version 2) [Data Set].Kaggle.(https://www.kaggle.com/datasets/rivalytics/er-wait-time/data?select=ER+Wait+Time+Dataset.csv)
 - Note: This is synthetic/historical data intended for portfolio use and does not contain any Protected Health Information. 
   
-##### Data Structure:
+### Data Structure:
 
 | Column Name | Type | Description |
 | ---  | --- | --- |
