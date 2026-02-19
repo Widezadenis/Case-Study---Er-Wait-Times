@@ -76,7 +76,7 @@ ggplot(peak_hours, aes(x = Nurse_to_Patient_Ratio, y = Total_Wait_Time_min)) +
   theme_minimal() +
   theme(plot.title = element_text(hjust = 0.5, face = "bold"))
 
-## Composition of wait times 
+## Plots composition of wait time stage (Registration, Triage, To Doctor)
 specialist_avail <- read_csv("~/Documents/SQL/SpecialistAvailability.csv")
 glimpse(specialist_avail)
 
