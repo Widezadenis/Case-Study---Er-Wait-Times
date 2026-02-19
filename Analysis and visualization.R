@@ -104,7 +104,7 @@ ggplot(specialist_long, aes(x = factor(Specialist_Availability),
        x = "Number of Specialists Available",
        y = "Average Wait Time (minutes)",
        fill = "Stage") + 
-  theme(plot.title = element_text(hjust = 0.5, face = "bold")) + #Centers the title 
   theme_minimal() + 
+  theme(plot.title = element_text(hjust = 0.5, face = "bold")) + #Centers the title 
   scale_fill_brewer(palette = "Set2") 
 
