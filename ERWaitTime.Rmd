@@ -1,0 +1,137 @@
+---
+title: "ER Wait Time Analysis"
+author: "Wideza Denis"
+date: "2026-02-19"
+output: html_document
+---
+
+## Sets Up Environment
+Notes: Setting up my R environment by laoding the 'tidyverse', 'ggplot2', and 'dplyr' packages
+
+```{r}
+library(tidyverse)
+library(ggplot2)
+library(dplyr)
+```
+
+## Creates df 
+```{r}
+ErWaitTimes <- read.csv("~/Downloads/ER Wait Time Dataset.csv")
+ntp_cor <- read_csv("~/Documents/SQL/NurseToPatientCorrelation.csv")
+specialist_avail <- read_csv("~/Documents/SQL/SpecialistAvailability.csv")
+```
+
+## Previews Dataset
+```{r}
+glimpse(ErWaitTimes)
+colnames(ntp_cor)
+glimpse(specialist_avail)
+```
+
+## Calculates average and median wait times
+```{r}
+avg_wait <- summarize(ErWaitTimes, mean(Total.Wait.Time..min.))
+median_wait <- summarize(ErWaitTimes, median(Total.Wait.Time..min.))
+```
+
+## Transform wait times from minutes to hours
+```{r}
+mutate_ErWaitTimes <- ErWaitTimes %>% 
+  mutate(Total.Wait.Time.hour = (Total.Wait.Time..min. / 60))
+glimpse(mutate_ErWaitTimes)
+```
+
+## Plots the average wait time by time of day 
+```{r}
+ggplot(mutate_ErWaitTimes, 
+       aes(x = Time.of.Day, y = Total.Wait.Time.hour)) +
+  geom_bar(stat = "summary", 
+           fun = "mean", 
+           fill = "#66c2a5") + 
+  labs(title = "Average Wait By Time of Day",  
+       x = "Time of Day", 
+       y = "Average Wait Time (Hour)") + # Labels x and y axis
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))  
+```
+
+## Plots the average wait time by day of week
+```{r}
+ggplot(mutate_ErWaitTimes, 
+       aes(x = factor(Day.of.Week, 
+      levels = c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")), 
+      y = Total.Wait.Time.hour)) +
+  geom_bar(stat = "summary", 
+           fun = "mean", 
+           fill ="#fc8d62") + 
+  labs(title = "Average Wait By Day of The Week", 
+       x = "Weekday", 
+       y = "Average Wait Time (Hour)",) + 
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45,), 
+        plot.title = element_text(hjust = 0.5, face = "bold")) 
+```
+
+## Plots wait time by urgency levels
+```{r}
+ggplot(mutate_ErWaitTimes, 
+       aes( x = Urgency.Level, 
+            y = Total.Wait.Time.hour, 
+            fill = Urgency.Level)) +
+  geom_boxplot() +
+  labs(title = "Wait Time by Urgency Level",
+       x = "Urgency Level (1=Critical, 5=Non-Urgent)",
+       y = "Total Wait Time (Hour)") +
+  theme_minimal() + 
+  scale_fill_brewer(palette = "Set2") +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"),
+        legend.position = "none")
+```
+
+## Plots Correlation between 'Nurse-to-Patient-Ratio' and 'Total Wait Time' during peak hours
+```{r}
+peak_hours <- ntp_cor %>% 
+  filter(Time_of_Day == "Evening")
+
+ggplot(peak_hours, aes(x = Nurse_to_Patient_Ratio, y = Total_Wait_Time_min)) +
+  geom_point(color = "#8da0cb") + 
+  geom_smooth(method = "lm", se = TRUE, color = "#fc8d62", fill = "#66c2a5") + 
+  labs(title = "Correlation During Evening Peak Hours",
+       x = "Nurse to Patient Ratio",
+       y = "Wait Time") +
+  theme_minimal() +
+  theme(plot.title = element_text(hjust = 0.5, face = "bold"))
+```
+
+## Plots composition of wait time stage (Registration, Triage, To Doctor)
+```{r}
+specialist_long <- specialist_avail %>% 
+  select(Specialist_Availability, avg_registration_time, avg_triage_time, avg_doc_time) %>% 
+  pivot_longer(cols = c(avg_registration_time, avg_triage_time, avg_doc_time), 
+               names_to = "stage", 
+               values_to = "minutes") %>%  
+  mutate(stage = case_when( 
+    stage == "avg_registration_time" ~ "Registration",
+    stage == "avg_triage_time" ~ "Triage",
+    stage == "avg_doc_time" ~ "Wait for Doctor",
+    TRUE ~ stage
+  ))
+
+ggplot(specialist_long, aes(x = factor(Specialist_Availability),
+                            y = minutes,
+                            fill = stage)) + 
+  geom_col(position = "stack") + 
+  geom_text(aes(label = round(minutes, 0)), #Adds labels to chart
+            position =  position_stack(vjust = 0.5),
+            size = 3,
+            color = "white") + 
+  labs(title = "Composition of Wait Time by Specialist Availability", 
+       x = "Number of Specialists Available",
+       y = "Average Wait Time (minutes)",
+       fill = "Stage") + 
+  theme_minimal() + 
+  theme(plot.title = element_text(hjust = 0.5, face = "bold")) + 
+  scale_fill_brewer(palette = "Set2") 
+
+```
+
