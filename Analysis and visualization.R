@@ -63,7 +63,7 @@ ggplot(mutate_ErWaitTimes,
 ntp_cor <- read_csv("~/Documents/SQL/NurseToPatientCorrelation.csv")
 colnames(ntp_cor)
 
-## Correlation between between 'Nurse-to-Patient-Ratio' and 'Total Wait Time' during peak hours
+## Correlation between 'Nurse-to-Patient-Ratio' and 'Total Wait Time' during peak hours
 peak_hours <- ntp_cor %>% 
   filter(Time_of_Day == "Evening")
 
