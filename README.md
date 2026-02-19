@@ -53,7 +53,7 @@ Hospital administrators, ER department heads, shift managers
 - Median wait time: 60 minutes
 Note: This finding shows that the data has a right-skewed distribution. A few patients are waiting for a very long time, which is pulling up the total average wait time. 
 
-####  Root Cause Analysis
+##  Root Cause Analysis
 -  Wait times are the longest during the evening and afternoons shifts and Mondays.
 -  Wait times are longer during the winter season
 -  During peak hours, there is a positive correlation between nurse to patient ratio and total wait times. For every increase in the ratio wait times increase.
@@ -75,18 +75,18 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 | 9 | 78 | 11 | 23 | 44 |
 | 10 | 84 | 11 | 25 | 47|
 
-#### Visualizations
+## Visualizations
 - Bar Chart: Average wait time by time of day - Reveals that there's an increase in patient visits in the evening.
 - Bar Chart: Average wait time by day of the week - Reveals that Mondays are the busiest and Sundays are the slowest. 
 - Box Plot: Wait time by urgency levels - Reveals that patients who have critical needs are seen faster than non critical patients.
 - Scatter Plot: Nurse-to-Patient-Ratio and total wait time correlation - Reveals ratio of 2:1 during evening hours keeps wait times under 30 minutes.
 - Stacked Bar Chart: Composition of wait times - Shows how the number of specialist affect wait times.
 
-#### Limitations
+## Limitations
 - The analysis does not account for external factors (flu season, local events)
 - "Peak hours" were defined based on volume, not clinical urgency
 
-#### Recommendations
+## Recommendations
 - Resource Allocation:
   *  Increase nurse coverage during the evening and on Mondays to improve nurse to patient ratios
   *  Current specialist levels does not have an impact on wait times, resources need to be allocated to nursing staff. 
@@ -94,6 +94,6 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
   * Increase nurse to patient ratio
   * Restructure registration process to accommodate patient volume
 
-#### Next Steps: 
+## Next Steps: 
 - Create a real-time dashbord to monitor nurse to patient ratios
 - Analyze if the 2:1 threshold changes by season or time of day
