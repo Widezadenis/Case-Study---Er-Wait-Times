@@ -92,5 +92,8 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
   *  Current specialist levels does not have an impact on wait times, resources need to be allocated to nursing staff. 
 - Winter Season Planning:
   * Increase nurse to patient ratio
-  * Restructure registration process to accomate patient volume. 
-  
+  * Restructure registration process to accommodate patient volume
+
+#### Next Steps: 
+- Create a real-time dashbord to monitor nurse to patient ratios
+- Analyze if the 2:1 threshold changes by season or time of day
