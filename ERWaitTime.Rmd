@@ -6,7 +6,7 @@ output: html_document
 ---
 
 ## Sets Up Environment
-Notes: Setting up my R environment by laoding the 'tidyverse', 'ggplot2', and 'dplyr' packages
+Notes: Setting up my R environment by loading the 'tidyverse', 'ggplot2', and 'dplyr' packages
 
 ```{r}
 library(tidyverse)
