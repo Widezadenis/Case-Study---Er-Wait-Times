@@ -77,16 +77,25 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 
 ## Visualizations
 - Bar Chart: Average wait time by time of day - Reveals that there's an increase in patient visits in the evening.
+  
 <img width="666" height="480" alt="Screenshot 2026-02-25 at 9 15 13 AM" src="https://github.com/user-attachments/assets/97b51361-5c54-45c4-8212-270891d54953" />
 
 - Bar Chart: Average wait time by day of the week - Reveals that Mondays are the busiest and Sundays are the slowest.
+  
 <img width="669" height="473" alt="Screenshot 2026-02-25 at 9 15 19 AM" src="https://github.com/user-attachments/assets/18a390f1-76c7-4717-a223-6f5e3ca6fee6" />
 
 - Box Plot: Wait time by urgency levels - Reveals that patients who have critical needs are seen faster than non critical patients.
+  
 <img width="662" height="480" alt="Screenshot 2026-02-25 at 9 15 26 AM" src="https://github.com/user-attachments/assets/43bdbb55-fa7e-4cfa-949c-52e41df30920" />
 
 - Scatter Plot: Nurse-to-Patient-Ratio and total wait time correlation - Reveals ratio of 2:1 during evening hours keeps wait times under 30 minutes.
+  
+<img width="674" height="487" alt="Screenshot 2026-02-25 at 9 15 33 AM" src="https://github.com/user-attachments/assets/a035f509-dadd-4ed6-b8ab-fb555f310662" />
+  
 - Stacked Bar Chart: Composition of wait times - Shows how the number of specialist affect wait times.
+  
+<img width="655" height="484" alt="Screenshot 2026-02-25 at 9 15 41 AM" src="https://github.com/user-attachments/assets/94a398e1-1fba-4433-bf29-b64c9b2d804c" />
+
 
 ## Limitations
 - The analysis does not account for external factors (flu season, local events)
