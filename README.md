@@ -1,4 +1,4 @@
-# Case-Study---Er-Wait-Times
+# Case-Study--Er-Wait-Times
 
 # Introduction: 
 This case study analyzes Emergency Room operational data to identify the root cause of longer wait times. By quantifying bottlenecks in patient flow, this analysis aims to provide data-driven recommendations to reduce the 'Door-to-Doc' time, ultimately improving both patient throughput and satisfaction scores.
@@ -77,6 +77,9 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 
 ## Visualizations
 - Bar Chart: Average wait time by time of day - Reveals that there's an increase in patient visits in the evening.
+<img width="666" height="480" alt="Screenshot 2026-02-25 at 9 15 13 AM" src="https://github.com/user-attachments/assets/97b51361-5c54-45c4-8212-270891d54953" />
+
+  
 - Bar Chart: Average wait time by day of the week - Reveals that Mondays are the busiest and Sundays are the slowest. 
 - Box Plot: Wait time by urgency levels - Reveals that patients who have critical needs are seen faster than non critical patients.
 - Scatter Plot: Nurse-to-Patient-Ratio and total wait time correlation - Reveals ratio of 2:1 during evening hours keeps wait times under 30 minutes.
