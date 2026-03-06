@@ -100,6 +100,7 @@ Note: This finding shows that the data has a right-skewed distribution. A few pa
 ## Limitations
 - The analysis does not account for external factors (flu season, local events)
 - "Peak hours" were defined based on volume, not clinical urgency
+- This dataset contains approximately 1,250 patients in each acuity level (25% each), which represents a balanced distribution ideal for analysis but may differ from real-world ER populations where Critical patients are typically less common.
 
 ## Recommendations
 - Resource Allocation:
